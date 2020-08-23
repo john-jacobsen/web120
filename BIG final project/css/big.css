@@ -1,0 +1,181 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+    background-color:#ccc;
+}
+
+main.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.5%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_1_of_2 {
+	width: 49.25%;
+}
+
+div.col {
+	float:left;
+	margin: 1% 0 1% 1.5%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 50%;
+} 
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+
+footer {
+	clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   main.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:65%;
+		float:left;
+        margin: auto;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+	}
+			
+    img.desktop {
+      		float:left;
+       		width:50%;
+            display:inline-block;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+    img.tablet {
+       		width:100%;
+            display:inline-block;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       		width:100%;
+            display:inline-block;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.5%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.25%;
+}
